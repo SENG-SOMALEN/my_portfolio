@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Tailwind v4 requires an explicit custom variant to use class-based
+   dark mode (instead of the default `prefers-color-scheme` media strategy).
+   This makes `dark:` utilities respond to the `.dark` class on <html>,
+   which is what useDark() from @vueuse/core toggles.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Kantumruy Pro', system-ui, sans-serif;
+  --font-khmer: 'Kantumruy Pro', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 600ms ease, border-color 600ms ease,
+    color 600ms ease, fill 600ms ease, stroke 600ms ease,
+    box-shadow 600ms ease, transform 600ms ease, opacity 600ms ease !important;
+  transition-delay: 0s !important;
+}
