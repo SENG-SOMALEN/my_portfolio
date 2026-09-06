@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import SengSomalen from '../assets/SengSomalen.png';
+import Malen from '../assets/Malen.jpg';
 
 // Import Icons ពី lucide-vue-next
 import {
@@ -30,9 +30,8 @@ const { t } = useI18n({ useScope: 'global' });
         <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-6 md:gap-8 items-stretch mb-16">
             <!-- Image Profile -->
             <div class="relative mx-auto md:mx-0 w-44 md:w-full">
-                <div
-                    class="aspect-square md:h-full w-44 md:w-full rounded-2xl overflow-hidden border-2 border-emerald-500/50 dark:border-emerald-400/70 shadow-[0_0_30px_rgba(16,185,129,0.12)] dark:shadow-[0_0_30px_rgba(52,211,153,0.22)] transition-shadow duration-300">
-                    <img :src="SengSomalen" alt="Seng Somalen" class="w-full h-full object-cover object-center" />
+                <div class="w-44 md:w-64 h-full rounded-2xl overflow-hidden border-2 border-emerald-500/50 dark:border-emerald-400/70 shadow-[0_0_30px_rgba(16,185,129,0.12)] dark:shadow-[0_0_30px_rgba(52,211,153,0.22)] transition-shadow duration-300">
+                    <img :src="Malen" alt="Seng Somalen" class="w-full h-full object-cover object-top" />
                 </div>
                 <!-- availability badge -->
                 <div
@@ -69,7 +68,6 @@ const { t } = useI18n({ useScope: 'global' });
             <!-- Timeline -->
             <div
                 class="relative pl-8 space-y-7 before:absolute before:left-[7px] before:top-2 before:bottom-2 before:w-px before:bg-gradient-to-b before:from-emerald-400 before:via-emerald-300 before:to-slate-300 dark:before:from-emerald-500 dark:before:via-emerald-400 dark:before:to-slate-700">
-
                 <!-- ================= University ================= -->
                 <div class="relative group">
                     <!-- Timeline Dot -->

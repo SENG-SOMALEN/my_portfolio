@@ -118,25 +118,8 @@ onUnmounted(() => {
         href="#home"
         class="group flex items-center gap-2 font-mono text-sm font-semibold text-slate-800 dark:text-slate-100 shrink-0 tracking-tight outline-none rounded-md focus-visible:ring-2 focus-visible:ring-emerald-500/40 dark:focus-visible:ring-emerald-400/40"
       >
-        <div class="relative flex items-center justify-center">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 16 16"
-            fill="none"
-            class="text-emerald-600 dark:text-emerald-400 transition-transform duration-300 group-hover:scale-110"
-          >
-            <path
-              d="M4 2h6l3 3v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z"
-              stroke="currentColor"
-              stroke-width="1.3"
-            />
-            <path d="M9.5 2v3.5H13" stroke="currentColor" stroke-width="1.3" />
-          </svg>
-          <div class="absolute inset-0 bg-emerald-400/20 blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        </div>
         <span class="text-emerald-500">&lt;</span>
-        <span class="group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">Seng Somalen</span>
+        <span class="group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">Malen</span>
         <span class="text-emerald-500">/&gt;</span>
       </a>
 

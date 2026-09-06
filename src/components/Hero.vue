@@ -73,12 +73,6 @@ const stack = computed(() => props.stack || ['Vue', 'TypeScript', 'Tailwind CSS'
               {{ $t('hero.btnContact') }}
             </router-link>
           </div>
-
-          <!-- Code import line -->
-          <p class="mt-6 font-mono text-xs text-slate-500 dark:text-slate-400/80">
-            import { <span class="text-slate-800 dark:text-slate-100 font-semibold">{{ stack.join(', ') }}</span> } from
-            <span class="text-amber-600 dark:text-amber-400 font-medium">'./stack'</span>
-          </p>
         </div>
 
         <!-- right: floating code card -->
@@ -100,10 +94,14 @@ const stack = computed(() => props.stack || ['Vue', 'TypeScript', 'Tailwind CSS'
             <pre class="overflow-x-auto p-4 sm:p-5 font-mono text-xs sm:text-[13px] leading-relaxed"><code><span class="text-slate-400 dark:text-slate-400/60">&lt;script setup lang="ts"&gt;</span>
 <span class="text-emerald-600 dark:text-emerald-400 font-medium font-semibold">const</span> <span class="text-slate-800 dark:text-slate-100">developer</span> = {
   <span class="text-amber-600 dark:text-amber-400">name</span>: <span class="text-emerald-600 dark:text-emerald-500">'{{ name }}'</span>,
-  <span class="text-amber-600 dark:text-amber-400">focus</span>: <span class="text-emerald-600 dark:text-emerald-500">'Web Development'</span>,
+  <span class="text-amber-600 dark:text-amber-400">focus</span>: <span class="text-emerald-600 dark:text-emerald-500">'Full Stack Developer'</span>,
   <span class="text-amber-600 dark:text-amber-400">stack</span>: [
-  <span class="text-emerald-600 dark:text-emerald-500">    'vue', 'typescript',
-    'tailwind'</span>
+  <span class="text-emerald-600 dark:text-emerald-500">    'Vue.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'PHP',
+      'Laravel,
+      'MySQL'</span>
   ],
   <span class="text-amber-600 dark:text-amber-400">available</span>: <span class="text-emerald-600 dark:text-emerald-400">true</span>,
 };

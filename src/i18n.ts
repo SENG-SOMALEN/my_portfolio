@@ -13,14 +13,14 @@ const messages = {
     hero: {
       name: 'Seng Somalen',
       location: 'Phnom Penh, Cambodia',
-      headline: ['I build', 'interfaces that', 'feel inevitable.'],
-      subhead: 'Frontend developer crafting fast, accessible web experiences with Vue, TypeScript, and Tailwind CSS.',
+      headline: ['I build', 'scalable full-stack', 'web applications.'],
+      subhead: 'Full Stack Developer crafting fast, responsive, and reliable web applications with Vue 3, Laravel, PHP, and MySQL.',
       btnWork: 'View my work',
       btnContact: 'Get in touch'
     },
     about: {
       title: 'About Me',
-      bio: "Hi, I'm Seng Somalen, a 2nd-year Information Technology student majoring in Software Development at Norton University. Originally from Banteay Meanchey, I am passionate about Web Development and building modern web applications. My goal is to build efficient and user-friendly technology solutions.",
+      bio: "Hi, I'm Seng Somalen, a 3rd-year Software Development student at Norton University. With hands-on experience as a Frontend Developer Intern and a strong foundation in Vue 3, Laravel, TypeScript, and MySQL, I specialize in building responsive, efficient, and user-friendly web applications. I am passionate about solving real-world problems and continuously growing as a Full Stack Developer.",
       education: 'Education',
       university: 'Norton University - Software Development',
       universityOld: 'DUC University Web Development',
@@ -55,7 +55,7 @@ const messages = {
     },
     about: {
       title: 'អំពីខ្ញុំ',
-      bio: 'ខ្ញុំបាទឈ្មោះ សេង សុម៉ាឡែន ជានិស្សិតផ្នែក Software Development ឆ្នាំទី ២ នៅសាកលវិទ្យាល័យ ន័រតុន។ ខ្ញុំមានស្រុកកំណើតនៅខេត្តបន្ទាយមានជ័យ និងបានបញ្ចប់ការសិក្សានៅវិទ្យាល័យផ្គាំក្នុងឆ្នាំ ២០២៣។ ខ្ញុំមានចំណូលចិត្តខ្ពស់លើការអភិវឌ្ឍ Web Application ដោយប្រើប្រាស់បច្ចេកវិទ្យាទំំនើបៗ ដើម្បីបង្កើតនូវដំណោះស្រាយបច្ចេកវិទ្យាដែលមានប្រយោជន៍។',
+      bio: 'ជម្រាបសួរ ខ្ញុំបាទឈ្មោះ សេង សុម៉ាឡែន ជានិស្សិតទី ៣ ជំនាញអភិវឌ្ឍន៍សូហ្វវែរ (Software Development) នៅសាកលវិទ្យាល័យ ន័រតុន។ ជាមួយនឹងបទពិសោធន៍ផ្ទាល់ដៃជា Frontend Developer Intern និងមានគ្រឹះយ៉ាងរឹងមាំលើ Vue 3, Laravel, TypeScript, និង MySQL ខ្ញុំមានជំនាញក្នុងការបង្កើតកម្មវិធីវេបសាយដែលមានភាពរហ័សរហួន ប្រសិទ្ធភាព និងងាយស្រួលប្រើប្រាស់។ ខ្ញុំមានឆន្ទៈយ៉ាងមុតមាំក្នុងការដោះស្រាយបញ្ហាក្នុងពិភពពិត និងអភិវឌ្ឍសមត្ថភាពខ្លួនឯងជាបន្តបន្ទាប់ដើម្បីក្លាយជា Full Stack Developer។',
       education: 'ការសិក្សា',
       university: 'សាកលវិទ្យាល័យ ន័រតុន - ជំនាញ Software Development (ឆ្នាំទី ២)',
       highSchool: 'វិទ្យាល័យផ្គាំ (បញ្ចប់ឆ្នាំ ២០២៣)'
