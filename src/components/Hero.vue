@@ -18,7 +18,6 @@ const name = computed(() => props.name || t('hero.name'))
 const location = computed(() => props.location || t('hero.location'))
 const headlineLines = computed(() => props.headlineLines || (tm('hero.headline') as string[]))
 const subhead = computed(() => props.subhead || t('hero.subhead'))
-const stack = computed(() => props.stack || ['Vue', 'TypeScript', 'Tailwind CSS'])
 </script>
 
 <template>
