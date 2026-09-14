@@ -1,5 +1,5 @@
-export type SkillCategory = 'Frontend' | 'Backend' | 'Tools & DevOps' | 'Soft Skills' | 'UX & UI';
-export type SkillLevel = 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
+export type SkillCategory = 'Frontend' | 'Backend' | 'Tools & DevOps' | 'Soft Skills' | 'UX & UI' | 'Database';
+export type SkillLevel = 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert' | 'Learning';
 
 export interface Skill {
     id: string;
@@ -7,6 +7,7 @@ export interface Skill {
     category: SkillCategory;
     icon: string;
     level?: SkillLevel;
+    progress?: number;
     yearsOfExperience?: number;
     isFeatured?: boolean;
 }

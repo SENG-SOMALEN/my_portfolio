@@ -8,6 +8,7 @@ export const skills: Skill[] = [
         icon: 'logos:vue',
         level: 'Intermediate',
         isFeatured: true,
+        progress: 50
     },
 
     {
@@ -15,8 +16,9 @@ export const skills: Skill[] = [
         name: 'TypeScript',
         category: 'Frontend',
         icon: 'logos:typescript-icon',
-        level: 'Beginner',
+        level: 'Learning',
         isFeatured: true,
+        progress: 28,
     },
 
     {
@@ -26,6 +28,7 @@ export const skills: Skill[] = [
         icon: 'logos:tailwindcss-icon',
         level: 'Intermediate',
         isFeatured: true,
+        progress: 67,
     },
 
     {
@@ -35,6 +38,7 @@ export const skills: Skill[] = [
         icon: 'logos:html-5',
         level: 'Intermediate',
         isFeatured: false,
+        progress: 75,
     },
 
     {
@@ -44,6 +48,7 @@ export const skills: Skill[] = [
         icon: 'logos:css-3',
         level: 'Intermediate',
         isFeatured: false,
+        progress: 75,
     },
 
     {
@@ -53,6 +58,7 @@ export const skills: Skill[] = [
         icon: 'logos:javascript',
         level: 'Intermediate',
         isFeatured: false,
+        progress: 60,
     },
 
     {
@@ -62,6 +68,7 @@ export const skills: Skill[] = [
         icon: 'logos:php',
         level: 'Intermediate',
         isFeatured: true,
+        progress: 50,
     },
 
     {
@@ -71,15 +78,17 @@ export const skills: Skill[] = [
         icon: 'logos:laravel',
         level: 'Intermediate',
         isFeatured: true,
+        progress: 50,
     },
 
     {
-        id: 'python',
-        name: 'Python',
+        id: 'java',
+        name: 'Java',
         category: 'Backend',
-        icon: 'logos:python',
-        level: 'Beginner',
+        icon: 'logos:java',
+        level: 'Learning',
         isFeatured: false,
+        progress: 31,
     },
 
     {
@@ -89,6 +98,7 @@ export const skills: Skill[] = [
         icon: 'logos:figma',
         level: 'Intermediate',
         isFeatured: false,
+        progress: 50
     },
 
     {
@@ -98,5 +108,24 @@ export const skills: Skill[] = [
         icon: 'logos:git-icon',
         level: 'Intermediate',
         isFeatured: false,
+        progress: 50
+    },
+    {
+        id: 'mysql',
+        name: 'MySQL',
+        category: 'Database',
+        icon: 'logos:mysql',
+        level: 'Learning',
+        isFeatured: false,
+        progress: 45
+    },
+    {
+        id: 'postgresql',
+        name: 'PostgreSQL',
+        category: 'Database',
+        icon: 'logos:postgresql',
+        level: 'Learning',
+        isFeatured: false,
+        progress: 20,
     },
 ];

@@ -7,21 +7,25 @@ const props = defineProps<{
   skill: Skill
 }>();
 
+const currentProgress = computed(() => {
+  if (props.skill.progress !== undefined) {
+    return props.skill.progress;
+  }
 
-const levelScore = computed(() => {
   switch (props.skill.level) {
-    case 'Beginner': return 1;
-    case 'Intermediate': return 2;
-    case 'Advanced': return 3;
-    case 'Expert': return 4;
+    case 'Beginner': return 25;
+    case 'Learning': return 35;
+    case 'Intermediate': return 50;
+    case 'Advanced': return 75;
+    case 'Expert': return 100;
     default: return 0;
   }
 });
 
-
 const levelBadgeClass = computed(() => {
     switch (props.skill.level) {
       case 'Beginner':
+      case 'Learning':
         return 'bg-slate-500/10 text-slate-400 dark:group-hover:bg-slate-200 dark:group-hover:text-slate-700';
       case 'Intermediate':
         return 'bg-blue-500/10 text-blue-500 dark:text-blue-400 dark:group-hover:bg-blue-100 dark:group-hover:text-blue-700';
@@ -37,9 +41,9 @@ const levelBadgeClass = computed(() => {
 
 <template>
   <div
-    class="group relative flex h-32 flex-col items-center justify-between p-4 transition-all duration-200
-           bg-slate-50/70 hover:bg-white
-           dark:bg-[#1a1a1a] dark:hover:bg-slate-100"
+    class="group relative flex h-36 flex-col items-center justify-between p-4 transition-all duration-200
+           bg-slate-50/70 hover:bg-white rounded-xl border border-slate-200/60 shadow-xs
+           dark:bg-[#1a1a1a] dark:border-slate-800 dark:hover:bg-slate-100"
   >
     <!-- Top Right: Level Badge -->
     <span
@@ -51,7 +55,7 @@ const levelBadgeClass = computed(() => {
     </span>
 
     <!-- Middle: Icon & Name -->
-    <div class="flex flex-col items-center gap-2 mt-3">
+    <div class="flex flex-col items-center gap-2 mt-2">
       <Icon
         :icon="skill.icon"
         class="h-8 w-8 text-slate-700 transition-all duration-200
@@ -66,18 +70,21 @@ const levelBadgeClass = computed(() => {
       </span>
     </div>
 
-    <!-- Bottom: Level Dots Indicator -->
-    <div v-if="skill.level" class="flex items-center gap-1.5 mb-1" title="Skill Level">
-      <span
-        v-for="i in 4"
-        :key="i"
-        class="h-1.5 rounded-full transition-all duration-200"
-        :class="[
-          i <= levelScore
-            ? 'w-3 bg-slate-400/30 dark:bg-slate-700 group-hover:bg-emerald-500 dark:group-hover:bg-slate-900'
-            : 'w-1.5 bg-slate-200/50 dark:bg-slate-800/60 group-hover:bg-slate-200 dark:group-hover:bg-slate-300'
-        ]"
-      />
+    <!-- Bottom: Progress Bar -->
+    <div class="w-full mt-2">
+      <div class="flex justify-between items-center text-[11px] font-mono mb-1">
+        <span class="text-slate-400 dark:group-hover:text-slate-600">Proficiency</span>
+        <span class="font-bold text-emerald-500 dark:text-emerald-400 dark:group-hover:text-emerald-600">
+          {{ currentProgress }}%
+        </span>
+      </div>
+
+      <div class="h-1.5 w-full bg-slate-200/70 dark:bg-slate-800 rounded-full overflow-hidden transition-colors duration-200 dark:group-hover:bg-slate-300">
+        <div
+          class="h-full bg-emerald-500 dark:bg-emerald-400 transition-all duration-500 ease-out rounded-full dark:group-hover:bg-emerald-600"
+          :style="{ width: `${currentProgress}%` }"
+        />
+      </div>
     </div>
   </div>
 </template>

@@ -8,7 +8,7 @@ export const projects: Project[] = [
         coverImage: '/portfolio.png',
         category: 'Web App',
         technologies: ['Vue 3', 'TypeScript', 'Tailwind CSS', 'Vite'],
-        liveUrl: 'https://myportfolio.com',
+        liveUrl: 'https://sengsomalen-portfolio.vercel.app/',
         githubUrl: 'https://github.com/username/my-portfolio',
         isFeatured: true,
         completedAt: '2026-01'
@@ -32,7 +32,7 @@ export const projects: Project[] = [
         coverImage: '/project-management.png',
         category: 'Web App',
         technologies: ['Vue-3', 'TyScript', 'Tailwind CSS', 'Laravel-10', 'MySQL'],
-        liveUrl: 'https://pms-rose-tau.vercel.app',
+        liveUrl: 'https://pms-net.vercel.app',
         githubUrl: 'https://github.com/SENG-SOMALEN/Project_Management_System',
         isFeatured: true,
         completedAt: '2026-09'

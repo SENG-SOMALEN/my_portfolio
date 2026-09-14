@@ -4,7 +4,8 @@ import { skills } from '../data/skills';
 import type { SkillCategory } from '../types/skill';
 import SkillBadge from '../components/SkillBadge.vue';
 
-const categories: SkillCategory[] = ['Frontend', 'Backend', 'UX & UI', 'Tools & DevOps']
+// បន្ថែម 'Database' ចូលត្រង់នេះ
+const categories: SkillCategory[] = ['Frontend', 'Backend', 'Database', 'UX & UI', 'Tools & DevOps']
 const selectedCategory = ref<string>('All')
 
 const filteredSkills = computed(() => {

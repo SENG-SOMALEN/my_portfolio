@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import Malen from '../assets/Malen.jpg';
+import sengsomalen from '../assets/sengsomalen.jpg';
 
 // Import Icons ពី lucide-vue-next
 import {
@@ -31,7 +31,7 @@ const { t } = useI18n({ useScope: 'global' });
             <!-- Image Profile -->
             <div class="relative mx-auto md:mx-0 w-44 md:w-full">
                 <div class="w-44 md:w-64 h-full rounded-2xl overflow-hidden border-2 border-emerald-500/50 dark:border-emerald-400/70 shadow-[0_0_30px_rgba(16,185,129,0.12)] dark:shadow-[0_0_30px_rgba(52,211,153,0.22)] transition-shadow duration-300">
-                    <img :src="Malen" alt="Seng Somalen" class="w-full h-full object-cover object-top" />
+                    <img :src="sengsomalen" alt="Seng Somalen" class="w-full h-full object-cover object-top" />
                 </div>
                 <!-- availability badge -->
                 <div
