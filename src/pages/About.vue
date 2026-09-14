@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import sengsomalen from '../assets/sengsomalen.jpg';
+import sengsomalen from '../assets/sengsomalen.jpg'
 
 // Import Icons ពី lucide-vue-next
 import {
